@@ -13,20 +13,20 @@ int demander_annee()
 	return annee;
 }
 
-void affiche_date(int annee, int nbjour)
+void affiche_date(int annee, int jour)
 {
 	string mois;
 
-	if (nbjour <= 31)
+	if (jour <= 31)
 	{
 		mois = " mars";
 	}
-	else if (nbjour >= 32)
+	else if (jour >= 32)
 	{
-		nbjour -= 31;
+		jour -= 31;
 		mois = " avril";
 	}
-	cout << " Date de Paques en " << annee << " : " << nbjour << mois << endl;
+	cout << " Date de Paques en " << annee << " : " << jour << mois << endl;
 }
 
 int date_Paques(int annee)
@@ -52,9 +52,9 @@ int date_Paques(int annee)
 
 int main()
 {
-	int annee, nbjour;
+	int annee, jour;
 	annee = demander_annee();
-	nbjour = date_Paques(annee);
-	affiche_date(annee, nbjour);
+	jour = date_Paques(annee);
+	affiche_date(annee, jour);
 	return 0;
 }

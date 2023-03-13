@@ -6,7 +6,7 @@
 
 using namespace std;
 
-//protos
+
 char code (char c, int entier);
 
 string decode(string coded, int decal);

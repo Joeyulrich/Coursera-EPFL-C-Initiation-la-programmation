@@ -29,16 +29,16 @@ void dire_chiffre(int& nombre, int repetitions_chiffre, int chiffre)
 
 int lire_et_dire(int& nombre)
 {
-	int cnt(1), temp(0), digit(0), digit2(0), dix(10),tempnb(0);
+	int cnt(1), temp(0), nb1(0), nb2(0), dix(10),tempnb(0);
 
 	do
 	{
 		digit = separer_chiffre_gauche(nombre);
 		while (true)
 		{
-			digit2 = separer_chiffre_gauche(nombre);
+			nb2 = separer_chiffre_gauche(nombre);
 
-			if (digit2 == digit) cnt++;
+			if (nb2 == nb1) cnt++;
 			else
 			{
 				tempnb = nombre;
@@ -48,7 +48,7 @@ int lire_et_dire(int& nombre)
 					tempnb /= 10;
 				}
 
-				nombre = nombre + (dix * digit2);
+				nombre = nombre + (dix * nb2);
 				break;
 			}
 		}

@@ -85,7 +85,7 @@ bool verifie_et_modifie(Carte& carte)
 		}
 	}
 	return true;
-	////Efacer les etangs
+	////Effacer les etangs
 	//for (size_t i(1); i < carte.size()-1; ++i)
 	//{
 	//	for (size_t j(1); j < carte[0].size()-1; ++j)
@@ -201,13 +201,13 @@ int main()
     {0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
   };
 
-  cout << "Carte au départ :" << endl;
+  cout << "Carte au depart :" << endl;
   affiche(carte);
   if (verifie_et_modifie(carte)) {
-    cout << "Carte après modification :" << endl;
+    cout << "Carte apres modification :" << endl;
     affiche(carte);
     cout << "Il vous faut " << longueur_cloture(carte)
-         << " mètres de clôture pour votre terrain."
+         << " metres pour votre terrain."
          << endl;
   }
 
